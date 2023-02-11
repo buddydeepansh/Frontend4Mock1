@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+.calculatorContainer {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  row-gap: 15px;
+  padding-left: 1vw;
+}
+.SecTitle {
+  font-family: "Mulish";
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 77px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.inputContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  max-width: 600px;
+  row-gap: 10px;
+}
+.inputContainer label {
+  font-family: "Mulish";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.inputContainer input[type="text"] {
+  outline: none;
+  border: 1px solid orange;
+  border-radius: 10px;
+  height: auto;
+  font-family: "Mulish";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 10px 15px;
+}
+.Result {
+  font-family: "Mulish";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.errMsg {
+  font-family: "Mulish";
+  color: #e33737;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.successMsg {
+  font-family: "Mulish";
+  color: #47f558;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.btnContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 400px;
+  justify-content: space-around;
+  align-items: center;
+}
+.btnContainer button {
+  width: 61px;
+  height: 61px;
+  outline: none;
+  border: 1px solid orange;
+  border-radius: 10px;
+  font-family: "Mulish";
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 22px;
+  letter-spacing: 0em;
+  background-color: antiquewhite;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.btnContainer button:hover {
+  transform: scale(1.1);
+}
+@media screen and (max-width: 620px) {
+  .SecTitle {
+    font-size: 34px;
+    line-height: 47px;
+  }
+  .inputContainer {
+    width: 90%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .inputContainer label,
+  .Result {
+    font-size: 20px;
+    line-height: 21px;
+  }
+  .inputContainer input[type="text"] {
+    font-size: 18px;
+    line-height: 20px;
+    padding: 5px 15px;
+  }
+  .btnContainer button {
+    width: 40px;
+    height: 40px;
+  }
+  .errMsg,
+  .successMsg {
+    font-size: 20px;
+    line-height: 21px;
+  }
+}
